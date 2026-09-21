@@ -7,14 +7,32 @@
     <title>Metric Change</title>
 </head>
 <body>
-    <div class="main-div">
+    <div>
+        <div class="main-div">
             <div class="hero">
                 <div class="heading-div"><h1 id="hero-heading">Metric/Imperial Unit Converion </h1></div>
-                <div class="numValue"><input type="text" class="num"></div>
+                <div class="numValue"><input type="text" class="num" id="read_value"></div>
+                <div id="error-hdl"></div>
                 <div class="btn-div">
                     <button id="btn">Convert</button>
                 </div>
             </div>
+        </div>
+            <div class="inner">
+                <div class="inner-box" id="first-box">
+                    <h3>Length (Meter/Feet)</h3>
+                    <p id="Length" class="desp"></p>
+                </div>
+                <div class="inner-box">
+                    <h3>Volume (Liters/Gallons)</h3>    
+                    <p id="Volume" class="desp"></p>       
+                </div>
+                <div class="inner-box" id="last-box">
+                    <h3>Mass (Kilograms/Pounds)</h3>
+                    <p id="Mass" class="desp"></p>
+                </div>
+            </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
